@@ -1,9 +1,12 @@
-#Nice Code
+
 #new table4
 import sqlite3  
 import pandas as pd
 from pandas import Series, DataFrame
 import numpy as np
+from xlsxwriter.workbook import Workbook
+
+
 conn = sqlite3.connect('sample_table4-new.sqlite')
 cur = conn.cursor()
 
@@ -77,3 +80,19 @@ for f in range(6):
             print(sheet_name[i],'in VC',f+1,"is problematic")
 
 conn.commit()
+
+
+
+#read from .sqlite file and write to xlsx
+
+workbook = Workbook('Table4.xlsx')
+worksheet = workbook.add_worksheet()
+
+conn=sqlite3.connect('F://python//sample_table4-new.sqlite')
+c=conn.cursor()
+c.execute("select * from Fund_exit")
+mysel=c.execute("select * from Fund_exit")
+for i, row in enumerate(mysel):
+    for j, value in enumerate(row):
+        worksheet.write(i, j, row[j])
+workbook.close()
