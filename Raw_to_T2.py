@@ -1,4 +1,4 @@
-#Nice Code
+
 #new table2
 import sqlite3  
 import pandas as pd
