@@ -5,8 +5,8 @@ Member of research team lead by associate professor Q.Li from Zhejiang Universit
 
 Data Description:
 
-Raw Data is downloaded from Econ. databases, semi-structured data containing information chunks including: 
-1. VC organization description: Name, Type, Found time, HQ position, Website etc..
+Raw Data is downloaded from Econ. databases, semi-structured data containing information chunks including: \\
+1. VC organization description: Name, Type, Found time, HQ position, Website etc..\\
 2. Investment information: target enterprises, time, series, industry, district etc..
 3. Cooperation information.
 4. VC Exit information: Type (s.a. IPO, Mergers and Acquisition), time, etc..
